@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href=" practice.css">
+  <style>
+    *{margin: 0px; padding:0px;}
+
+.container{
+  width:100vw;
+  height:100vh;
+  border: 1px solid black;
+  
+ 
+}
+.item{
+  width: 100vw;
+  height:100vh;
+  display:grid;
+  /*grid-templete-column: 1fr 1fr 2f 1fr;*/
+  
+  /*grid-gap: 1rem;*/
+  
+  /*gird-templete-colum: repeat(3, 1fr);*/
+   /*gird-templete-colum: (30px, 1fr);*/
+ /*grid-auto-rows: minmax(200px, quto);*/
+ /* grid-row:2/4*/
+  
+  }
+
+.item :nth-child(odd){
+  width: 20vw;
+  height: 20vh;
+  border: 1px solid black;
+    }
+  </style>
+  </head>
+<body>
+<div class="container">
+  <div class="item">
+    <div>안녕</div>
+    <div>반가워</div>
+    <div>오랜만이야</div>
+    <div>수고했어</div>
+  </div>
+ </div>
+
+</body>
+</html>
