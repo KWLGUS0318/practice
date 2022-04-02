@@ -27,10 +27,16 @@
 .item{
  width:10vw;
   height:10vh;
+  flex-basis: 0;
   }
 
 .item:nth-child(odd){
   background-color: pink;
+  /*flex-grow: auto;*/
+  flex-shrink: 1, 2, 1;
+  /*align-self(개별입력)*/
+  /*order: 순서 바꾸기*/
+  
 }
   </style>
   </head>
