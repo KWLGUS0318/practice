@@ -1,0 +1,76 @@
+*{margin: 0px; padding: 0px;}
+
+
+@keyframes animation{ 
+  0%   {width: 200vw; background-color:lightyellow;}
+  25%  {width: 50vw; background-color:lightyellow;}
+  50%  {width: 80vw;  opacity: 1;
+  background-color: lightyellow;}
+  100% {width: 100vw;height: 100vh;}
+}
+
+
+.root{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  margin: 10vw;
+
+&> :nth-child(1){
+  width: inherit;
+  height: inherit;
+  mix-blend-mode: multiply;
+  
+}
+  
+
+  & > :nth-child(1) :nth-child(1){
+    width: 40vw;
+    height: 40vw;
+    background-color: burlywood;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 50vw;
+  animation: 10s animation infinite;
+  }
+
+
+  & > :nth-child(1) :nth-child(2){
+    width: 40vw;
+    height: 40vw;
+    background-color: pink;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+
+    position: absolute;
+    top: 60vw; right: 20vw;
+  }
+  
+
+  & > :nth-child(1) :nth-child(3){
+    width: 40vw;
+    height: 40vw;
+    background-color: skyblue;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+
+    position: absolute;
+    top: 45vh;
+  }
+  
+
+  & > :nth-child(1) :nth-child(4){
+    width: 40vw;
+    height: 40vw;
+    background-color: lightgreen;
+    opacity: 0.3;
+    
+
+    position: absolute;
+    top: 50vh; right: 20vw;
+
+  }
+
+}
