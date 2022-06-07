@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#root > div {
+  width: 100vw;
+  height: 50vh;
+  background-color: #c4c4c4;
+}
+/*# sourceMappingURL=prac.css.map */

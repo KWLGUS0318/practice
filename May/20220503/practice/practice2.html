@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #root>div {
+      margin: 2vw;
+      font-size: 2rem;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <div id="root">
+    <div>pokemon</div>
+    <button>click</button>
+  </div>
+
+
+
+  <script>
+
+    /*
+    
+    1. 식별할 녀석들을 작성해준다.
+    2. 이벤트가 일어날때 배열에 있는 값이 나타난다. --> 숫자를 써먹어야겠다.
+    3. 이벤트가 일어날때 배열에 있는 원소들이 순차적으로 나타난다.
+    4. 마지막 원소가 나타난 뒤에는 새로운 텍스트 "포켓몬을 다모았다"를 보여준다.
+    
+    */
+
+   const practics = ["피카츄", "라이츄", "파이리", "꼬부기", "버터풀", "야도란", "피죤투", "또가스"];
+   
+   const completeText = "포켓몬을 다모았다.";
+
+    const root = document.getElementById("root");
+
+  // root에 문서에서 변수 root을 꺼내줘
+    const div = root.children[0];
+    //div. root 0번째, 아이를 꺼내줘
+
+    const button = root.children[1];
+    // root의 1번째. 버튼을 꺼내줘 
+
+    console.log(root); //root 확인
+    console.log(div);  //div  확인
+    console.log(button); 
+
+    let current = 0;
+    // 변수 current =  0 이야
+
+    let isEnd = false;
+
+    //isEnd 는 거짓이야 
+
+    button.addEventListener('click', function() {
+      //버튼의 기능을 넣을래 
+
+      if(current < practics.length) {
+      // 만약 practics 모두가 0보다 크다면 
+
+        const makeDiv = document.createElement("div");
+        //
+
+        makeDiv.textContent = practics[current];
+
+        div.appendChild(makeDiv);
+
+        console.log(practics[current]);
+
+        current++;
+      } 
+
+      if(current >= practics.length) {
+
+        console.log('hello');
+
+        div.textContent = completeText;
+
+        isEnd = true;
+
+        console.log(isEnd + "트루로 바뀌었습니다.")
+      }
+
+      if(isEnd === true) {
+        current = 0;
+        console.log(current + " : current 값이 0으로 바뀌었습니다.");
+        isEnd = false;
+      }
+
+    });
+
+
+
+
+  </script>
+</body>
+
+</html> 

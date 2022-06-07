@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+.red{
+  width: 100vw;
+  height: 100vh;
+  
+  
+  display: flex;
+  justify-content: center;
+  column-gap: 5vw;
+
+}
+.red > nav {
+  width: inherit;
+  height: 40vh;
+  margin-left: 0px;
+}
+
+.items:not(:hover){
+  /* visibility: hidden; */
+  background-color: burlywood;
+  color: white;
+}
+
+.items:hover{
+  visibility: visible;
+  color: brown;
+}
+
+.menu-contain{
+overflow: auto;
+}
+
+  </style>
+</head>
+<body>
+  <div class="red">
+
+    <nav>
+        <ul class ="menu-contain">사용단계별
+          <li class="items">클렌징</li>
+          <li class="items">토너</li>
+          <li class="items">에센스</li>
+          <li class="items">크림</li>
+          <li class="items">스페셜케어</li>
+          <li class="items">선케어</li>
+          <li class="items">바디케어</li>
+          </ul>
+    </nav>
+
+    <nav>
+      <ul class ="menu-contain">제품 라인별
+        <li class="items">클렌징</li>
+        <li class="items">토너</li>
+        <li class="items">에센스</li>
+        <li class="items">크림</li>
+        <li class="items">스페셜케어</li>
+        <li class="items">선케어</li>
+        <li class="items">바디케어</li>
+    </ul>
+
+  </nav>
+
+  <nav>
+    <ul class ="menu-contain">이벤트
+    <li class="items">클렌징</li>
+    <li class="items">토너</li>
+    <li class="items">에센스</li>
+    <li class="items">크림</li>
+    <li class="items">스페셜케어</li>
+    <li class="items">선케어</li>
+    <li class="items">바디케어</li>
+  </ul>
+
+</nav>
+
+<nav>
+  <ul class ="menu-contain">피부 고민별
+    <li class="items">피부 노화 주름</li>
+    <li class="items">건조하고 거친 피부</li>
+    <li class="items">모공케어</li>
+    <li class="items">기미관리</li>
+    <li class="items">윤기없는 피부</li>
+    <li class="items">피부 탄력</li>
+    <li class="items">눈 밑 다크서클과 잔주름</li>
+    <li class="items">자외선 차단</li>
+</ul>
+
+</nav>
+  </div>
+       
+</body>
+</html>

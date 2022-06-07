@@ -1,0 +1,76 @@
+*{margin: 0px; padding: 0px; }
+
+.root{
+  width: 100vw;
+  height: 5vh;
+  border: 1px solid black;
+
+}
+
+.root :nth-child(1){
+  width: inherit;
+  height: 5vh;
+  
+  display: flex;
+  z-index: 2;
+}
+.root :nth-child(1) div{
+  width: 50vw;
+  height: 5vh;
+  border: 1px solid red;
+}
+
+
+.root :nth-child(1) ul{
+  width: 50vw;
+  height: 5vh;
+  border: 1px solid red;
+  display: flex;
+  list-style: none;
+z-index: 4;
+}
+
+.root :nth-child(2) li{
+  margin-left: 2rem;
+  justify-content: flex-end;
+}
+
+.container{
+  width: 100vw;
+  height: 50vh;
+  border: 1px solid blue;
+}
+.container :nth-child(1){
+  width: inherit;
+  height: 30vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: end;
+  z-index: 3;
+
+}
+
+.container :nth-child(1) div{
+  width: 80vw;
+  height: 80vw;
+  border-radius: 30rem;
+  z-index: 2;
+  background-color: rgb(189, 178, 178);
+  position: absolute;
+  right: -20px; bottom:30rem;
+  z-index: 1;
+
+}
+
+
+.container :nth-child(2){
+  width: 50;
+  height: 20vh;
+  font-size: 4rem;
+  color: black;
+  margin-left: 3rem;
+  z-index: 5;
+}
+.container :nth-child(2) > h1{
+ z-index: 6;
+}

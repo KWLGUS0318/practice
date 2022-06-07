@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    #root{
+      width: 100vw;
+      height: 20vh;
+      border: 1px solid black;
+
+      display: flex;
+    }
+
+    #root>ul{
+      display: flex; }
+
+
+      #root>ul>li{
+        margin-right: 2vw;
+      }
+
+      #root>ul>li:hover{
+        background-color: black;
+        color: white;
+      }
+      .on{
+        background-color: black;
+        color: white;
+      }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <ul class="hello">
+      <li>items-1</li>
+      <li>items-2</li>
+      <li>items-3</li>
+      <li>items-4</li>
+    </ul>
+  </div>
+
+  <script>
+
+  const group = document.querySelector('#root');
+  console.log('group');
+  
+  group.addEventListener('click', function(action){
+    if(action.target.classList.contains('on'))    {
+      action.target.classList.remove('on');
+    }else{
+      action.target.classList.add('on');
+    }
+  })
+
+ 
+
+  </script>
+</body>
+</html>

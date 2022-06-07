@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+#root{
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+#root>div{
+  width: 80vw;
+  height: 30vh;
+  text-align: center;
+
+  z-index: 1;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wha{
+  transform: rotate(180deg);
+  height: 7.2vh;
+}
+.white{
+  width: inherit;
+  height: 30vh;
+  background-color: white;
+  z-index: 2;
+  position:relative;
+  bottom: 24vw;
+}
+
+  </style>
+</head>
+
+<body>
+<div id="root">
+  <div>
+  <h1 class="wha">AHW</h1>
+  <h1 class="tever">TEVERYOU</h1>
+  <H1></H1>
+  <H1 class="wha">TNAW</H1>
+  </div>
+<span class="white"></span>
+  
+</div>  
+</body>
+</html>

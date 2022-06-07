@@ -1,0 +1,147 @@
+*{margin: 0px; padding: 0px; 
+box-sizing: border-box;}
+
+
+
+.root{
+  width: 100vw;
+  height: 20vh;
+  background-color: #c4c4c4;
+  display:flex;
+  justify-content: space-between;
+
+  
+
+& > nav{
+  width: 40vw;
+  height: 30vh;
+  background-color: gray;
+  margin: 1rem;
+
+  text-align: center;
+ 
+  line-height: 3rem;
+ z-index: 2; 
+ display: flex;
+}
+
+& >nav p{
+  width: 25%;
+  height: 30vh;
+  background-color: #c4c4c4;
+  border: 1rem solid gray;
+ 
+}
+
+& > menu{
+  width: 10vw;
+  height: 10vh;
+  background-color: gray;
+  margin: 2rem;
+}
+
+}
+
+
+.container-1{
+  width: 100vw;
+  height: 30vh;
+  background-color: green;
+
+  justify-content: right;
+
+
+
+  & :nth-child(1){
+    width: 20vw;
+    height: 20vh;
+    background-color: lightblue;
+
+    z-index: 1;
+    position: absolute;
+    top: 15vh; right: 35vw;
+  }
+
+  & :nth-child(2){
+    width: 20vw;
+    height: 20vh;
+    background-color: lightyellow;
+
+    z-index: 2;
+    position: absolute;
+    top: 18vh; right: 30vw;
+
+}
+
+
+& :nth-child(3){
+  width: 20vw;
+  height: 20vh;
+  background-color: lightgreen;
+
+  z-index: 3;
+  position: absolute;
+  top: 22vh; right: 25vw;
+}
+
+
+
+}
+
+
+.container-2{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  
+
+
+
+  & > main{
+  width: 33.3%;
+  height: 30vh;
+  border: 1rem solid gray;
+  background-color: #c4c4c4;
+  z-index: 1;
+  
+  display: flex;
+}
+
+& >main div{
+  margin: 2px;
+  width: 15vw;
+  height: 10vw;
+  border: 1px solid greenyellow;
+  background-color: green;
+  z-index: 1;
+}
+
+
+
+ 
+& >main div p {
+  width: 15vw;
+  height: 3vw;
+  border: 1px gray;
+  background-color: black;
+  z-index: 2;
+
+
+}
+}
+
+.cotainer-3{
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  
+
+  display: flex;
+  
+  & > footer{
+    width: 33.3%;
+    height: inherit;
+    border: 1rem solid blue;
+    background-color: #c4c4c4;
+  }
+}

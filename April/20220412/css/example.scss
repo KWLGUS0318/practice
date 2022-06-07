@@ -1,0 +1,48 @@
+*{margin: 0px; padding: 0px;}
+
+
+@mixin flex-setting($flex-setting: darkgray)
+{ display: flex;
+  justify-content: $a;
+  align-items: center;
+
+}
+
+
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-color: #c4c4c4;
+
+  @include flex-setting($flex-setting: black);
+
+
+
+
+  &>div{
+  width: 50vw;
+  height: 50vh;
+  background-color: #aaa;
+
+
+
+  @include flex-setting(flex-start);
+
+
+  &>section{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    border: 1px solid black;
+  }
+
+  &>section:nth-child(2){
+    width: 200px;
+    background-color:blue;
+  }
+}
+
+
+
+}

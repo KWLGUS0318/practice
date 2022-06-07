@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id = "root">
+
+  </ul>
+  <button>click</button>
+
+
+  <script>
+  const root = document.getElementById('root');
+  //
+  const liItems =document.querySelectorAll('.menu-items')
+  //
+  const clickBtn = document.querySelector('button');
+  //
+
+
+  root.style.width = "300px";
+  root.style.height = "500px";
+  root.style.backgroundColor = "salmon";
+
+  let isStatus = true;
+
+  clickBtn.addEventListener("click", function(){
+
+  
+  if(isStatus === true)  {
+  //console.log('hello');
+
+
+
+  isStatus =false;
+  for(let i  = 0; i < liItems.length; i ++){
+    //
+    liItems[i].style.display = "none";
+    //
+  }
+  
+  } else{
+    //console.log('bye');
+    //
+    isStatus= true;
+
+    for(let i = 0; i < liItems.length; i++){
+      //
+      liItems[i].style.display =" block";
+      //
+    }
+    
+    
+  }})
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{margin: 0px; padding: 0px;}
+
+@mixin display { justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes left {
+    from{ left: 10vw;}
+    to{left: 30vw}}
+   
+@keyframes right {
+      from{ right: 10vw;}
+      to{right: 30vw}
+     
+}
+
+.root{
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
+  flex-direction: column;
+  @include display;
+  
+
+  & > span{  
+    
+      width: 5vw;
+      height: 5vw;
+      
+      border-radius: 30px;
+      margin-bottom: 1rem;
+     background-color: #ccc;
+    }
+  
+  }
+
+  .main{
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+
+    @include display;
+  
+    & :first-child{
+      width: 15vw;
+      height: 15vh;
+      background-color: rgb(223, 78, 78);
+      border-radius: 50px;
+      z-index: 1;
+
+      position: absolute;
+      top: 40vh; right: 40vw;
+    
+    animation: 1s left infinite;}
+
+
+
+
+      & :nth-child(2){
+        width: 15vw;
+        height: 15vh;
+        background-color: #fff;
+        border-radius: 50px;
+
+         position: absolute;
+         top:55vh; right: 40vw;
+         margin-top: 2rem;
+
+
+         z-index: 2;
+         animation: 1s right infinite;
+      }
+  
+  }
+
+
+    
+    .box{
+      width: 30vw;
+      height: 15vw;
+      
+
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      font-family: sans-serif;
+      text-align: center;
+      line-height: 3;
+      backdrop-filter: blur(0.8em);
+
+      z-index: 3;
+      color: white;
+      font-size: 2rem;
+      
+
+      }
+
+      .container{
+        width: 100vw;
+        height: 5vh;
+        background-color: black;
+        @include display;
+        border: 1px solid red;
+
+        & :first-child{
+          width: inherit;
+          height: 5vh;
+          background-color: black;
+
+          @include display;
+
+    
+        }
+
+        & > aside  p{
+          width: 10vw;
+          height: 3vh;
+          background-color: #3a3434;
+          border-radius: 30vw;
+        }
+
+        & > aside :first-child{
+          width: 40vw;
+          height: 3vh;
+          background-color: #3a3434;
+          margin-right: 2vw;
+        }
+        
+       
+      }
+    
+      .last{
+        width: inherit;
+        height: 30vh;
+        border: 1px solid blue
+        ;
+        background-color: black;
+
+        @include display;
+
+    
+
+        & :first-child{
+          width: 50vw;
+          height: 25vh;
+          border: 1px solid green;
+
+          margin: 2rem 2rem;
+          border-radius: 30px;
+          background-color: #ccc;
+        }
+
+        & :nth-child(2){
+          width: 40vw;
+          height: 25vh;
+          border: 1px solid green;
+
+          margin: 2rem;
+          border-radius: 30px;
+          background-color: #ccc;
+          
+        }
+      }

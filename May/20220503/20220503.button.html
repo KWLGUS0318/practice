@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <div id="root">
+
+  
+    <button>블랙</button>
+
+
+   
+    </div>
+
+
+
+    <script>
+   
+  const root =document.getElementById("root");
+  const clickBtn = root. children[0];
+
+  console.dir(root);
+  console.log(clickBtn);
+
+  let bgColorValue = "black";
+
+  root.style.width = "100vw";
+  root.style.height = " 100vh";
+  root.style.margin = "0vw";
+  root.style.padding = "0vh";
+  root.style.backgroundColor = `#${bgColorValue}`;
+
+
+
+  let data = true;
+  clickBtn.addEventListener('click', function() {
+
+
+  if(data === true){
+    console.log('data 값은 :' + data);
+    data = false;
+    root.style.backgroundColor = "#ffff";
+
+
+  } else {
+    console.log ("지금 else로 data 값은 : " + data);
+    data = true;
+    root.style.backgroundColor = " black";
+
+
+
+  }
+  });
+
+
+
+
+   </script>
+</body>
+</html>

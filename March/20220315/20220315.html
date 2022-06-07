@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+*{margin: 0px; padding: 0px; border-style: none;}
+
+.root{
+  width: 15vw;
+  height: 15vh;
+  background-color: burlywood;
+  flex-direction: column;
+
+}
+
+.root>div{
+  height: 10vh;
+  width: 15vw;
+  background-color: black;
+  color: white;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  transform: rotate(0deg);
+  -webkit-appearance: button;
+  
+}
+
+
+.root:nth-child(2){
+  margin: 50px;
+  -webkit-font-smooothing: antialiased;
+  background-color:brown;
+  cursor: auto;
+
+}
+
+
+</style>
+<body>
+  <div class="root">catergorize
+  <div>봄</div>
+  <div>여름</div>
+  <div>가을</div>
+  <div>겨울</div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  console.log(document.body.clientWidth)
+
+
+  let nameArray = ["손만충", "장준형", "임성민"];
+  if(document.body.clientWidth>1645){
+    document.body.textContent = nameArray[2];
+  }
+  else if(document.body.clientWidth >425){
+    document.body.textContent = nameArray[1];
+  }
+  
+  else{document.body.textContent = nameArray[0];}
+
+
+
+
+  </script>
+</body>
+</html>

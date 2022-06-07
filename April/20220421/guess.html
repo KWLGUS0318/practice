@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+    
+  </div>
+
+  <script>
+    /* 
+    ? 도전해보기 ★★★★★★★★★★★★★★★★★★★★★★★★
+    TODO: 아래의 자바스크립트 명령에 대한 의도를 유추 하시오.
+    */
+    document.body.style.padding = "0";
+    // 바디의 padding 을 0으로 세팅
+    document.body.style.margin = "0";
+    // 바디의 margin 을 0으로 세팅 
+    const root = document.getElementById("root");
+    // root에서 문서 root를 불러와줘
+    let widthValue = 100;
+    // 넓이 단위를 100으로 할래 
+    let heightValue = 100;
+    // 높이 단위를 100으로 할래 
+    root.style.width = `${widthValue}vw`;
+    // root의 넓이 단위를 vw로 할래
+    root.style.height = `${heightValue}vh`;
+    // root의 높이 단위를 vh로 할래
+    root.style.backgroundColor = "darkblue";
+    // root의 배경을 darkblue로 할래
+    let backgroundColorArray = ["#ff0000", "#333333"];
+    // 배경 정렬 색깔 "#ff0000", "#333333"
+    let setSwitch = 0;
+    // 0번부터 시작
+
+
+
+
+    root.addEventListener("click", function() {
+      // root 을 클릭했을 때 기능 
+      if(setSwitch === 0) {
+        // 만약 세트 스위치와 0을 비교했을 때에
+
+
+        root.style.backgroundColor = backgroundColorArray[1];
+        //  root의 배경 array 1번 정렬
+        setSwitch = 1;
+        // 스위치 한번 눌렀을 때 1번
+
+
+
+      } else {
+        // 그 외에
+        root.style.backgroundColor = backgroundColorArray[0];
+        //root의 배경 array 2번 정렬
+
+        setSwitch = 0;
+        // 스위치 원점으로 0번 
+      }
+
+    });
+
+
+
+
+    
+
+
+  </script>
+</body>
+</html>

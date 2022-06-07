@@ -1,0 +1,19 @@
+*{margin: 0px; padding: 0px;}
+
+
+#root{
+  width: 100vw;
+  height: 400vh;
+  background-color:#c4c4c4;
+& > div{
+  width: 100vw;
+  height: 3vh
+  filter blur(4px);}
+
+& > div img{width: 100vw;}
+
+  .container{
+    width: inherit;
+    height: 20vh;
+    background-color: gray;
+  }}

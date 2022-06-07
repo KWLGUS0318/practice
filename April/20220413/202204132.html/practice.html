@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+*{margin: 0px; padding: 0px;}
+
+@keyframes animation{ 
+  0%   {background-color: rgb(134, 18, 18);
+  width: 200vw;}
+  25%  {background-color: yellow;
+  width: 50vw;}
+  50%  {background-color: blue;
+  width: 80vw;}
+  100% {background-color: green;
+  width: 50vw;height: 100vh;}
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+#root > div{
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  opacity: 1;
+
+  animation: 10s animation infinite;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>div</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{margin: 0px;padding: 0px;}
+.root{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+/* 첫번째 플러스 박스*/
+.root :nth-child(1){
+  width: inherit;
+  height: 10vh;
+  
+}
+
+.root :nth-child(1)>h1{
+  font-size: 4rem;
+  color: gray;
+  margin-left: 1rem;
+
+}
+/* 두번째  박스*/
+.root :nth-child(2){
+  width: inherit;
+  height: 10vh;
+  
+}
+
+.root :nth-child(2) :nth-child(1){
+  width: inherit;
+  height: 1vh;
+}
+
+.root :nth-child(2) h2{
+  font-size: 2rem;
+  color: gray;
+  margin-left: 1rem;
+  text-align: start;
+ 
+  
+}
+
+.root :nth-child(2) h3{
+  color: gray;
+  text-align: start;
+  justify-content: start;
+  margin-left: 1rem;
+}
+
+
+/* 선택 박스*/
+.root :nth-child(3){
+  width: inherit;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex-end;
+}
+
+.root :nth-child(3) p {
+width: 2vw;
+height: 1vh;
+border-radius: 20px;
+background-color: lightgray;
+margin: 4px;
+}
+
+
+.black { background-color: black;}
+
+  /* 네번째 박스*/
+.root :nth-child(4){
+  width: inherit;
+  height: 29vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+ /* 네번째 박스 -1 */
+.root :nth-child(4) :nth-child(1){
+  width: 90%;
+  height: 100%;
+  border-radius: 2rem;
+  background-color: lightgray
+}
+
+/*bold card*/
+.root :nth-child(4) :nth-child(1) :nth-child(1){
+  width: inherit;
+  height: 5vh;
+
+  color: white;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+
+/*your card*/
+.root :nth-child(4) :nth-child(1) :nth-child(2){
+  width: inherit;
+  height: 8vh;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+
+
+/*card number*/
+.root :nth-child(4) :nth-child(1) :nth-child(3){
+  width: 40vw;
+  height: 5vh;
+  color: rgb(94, 91, 91);
+ ;
+}
+
+
+.root :nth-child(4) :nth-child(1) :nth-child(4){
+  width:90vw;
+  height: 2vh;
+  border: 1px solid red;
+
+}
+.root :nth-child(4) :nth-child() :nth-child(4) p{
+  width: 10vw;
+  height: 2vh;
+  border: 1px solid green;
+}
+
+
+
+
+
+  /* 다섯번째 박스*/
+.root :nth-child(5){
+  width: inherit;
+  height: 29vh;
+  border: 1px solid black;
+}

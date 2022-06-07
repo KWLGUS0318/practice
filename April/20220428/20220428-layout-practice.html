@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+    <style>
+
+      /*
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#container{
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+
+  display: flex;
+}
+
+#section1{
+  width: 30vw;
+  height: 30vh;
+  background-color: rgb(124, 201, 201);
+
+  margin: 4vw;
+
+
+  z-index: 1;
+}
+
+#section2{
+  width: 25vw;
+  height: 25vh;
+  background-color: rgb(26, 66, 66);
+
+  position: absolute;
+  top: 300px; left: 40vw;
+
+  z-index: 2;
+}
+*/
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+        <div id="section1"></div>
+        <div id="section2"></div>
+    </div>
+
+  </div>
+
+
+  <script>
+  document.body.style.margin = 0;
+  document.body.style.padding = 0;
+  document.body.style.boxSizing = "border-box";
+  document.body.style.display = "flex";
+  document.body.style.justifyContent = "center";
+  
+
+  const root = document.getElementById('root');
+  console.log('root');
+  root.style.marginTop ="30vw"
+
+
+  const container = document.getElementById('container');
+  console.log('container')
+  container.style.width = "50vw"
+  container.style.height ="50vh"
+  container.style.border = "1px solid black"
+  container.style.display = "flex"
+
+  const section1 = document.getElementById('section1');
+  console.log('section1')
+  section1.style.width = "30vw"
+  section1.style.height = " 30vh"
+  section1.style.backgroundColor = "skyblue";
+  section1.style.margin = "4vw";
+  section1.style.position = "absolute"
+  section1.style.zIndex = 1;
+
+
+
+  const section2 = document.getElementById('section2');
+  console.log('section2')
+  section2.style.width = "30vw"
+  section2.style.height = " 30vh"
+  section2.style.backgroundColor = "darkblue";
+  section2.style.margin = "4vw";
+  section2.style.position = "relative";
+  section2.style.top = "8vw";
+  section2.style.left = " 8vh";
+  section2.style.zIndex = 2;
+
+
+document. section1 = document.addEventListener("click",function()
+{
+  document.getElementById("section1");
+  section1.style.zIndex= 2;
+
+});
+
+document. section2 =document.addEventListener("click",function(){
+  document.getElementById("section2");
+  section2.style.zIndex = 1;
+})
+
+
+
+
+
+  </script>
+</body>
+</html>

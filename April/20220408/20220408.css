@@ -1,0 +1,38 @@
+#root{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+
+}
+#root > div {
+  width: 90%;
+  height: 80%;
+  border: 1px solid black;
+  margin: 10vh;
+  display: flex;
+}
+#root > div :nth-child(1){
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+
+}
+
+#root > div :nth-child(2){
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+#root > div :nth-child(2) :nth-child(1){
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+  margin: 5vh;
+  display: flex;
+}
+
+
+#root :nth-child(3) :nth-child(1){
+  
+}

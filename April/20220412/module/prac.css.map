@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EAAC,MAAM,EAAE,GAAG;EAAE,OAAO,EAAE,GAAG;CAAG;;AAE9B,AAAA,KAAK,CAAA;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;CASvB;;AAZD,AAOE,KAPG,GAOD,GAAG,CAAA;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAC,OAAO;CACzB",
+    "sources": [
+        "prac.scss"
+    ],
+    "names": [],
+    "file": "prac.css"
+}

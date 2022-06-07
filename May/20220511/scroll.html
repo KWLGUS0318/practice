@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  *{margin: 0px; padding: 0px; }
+  #root{
+    width: 100vw;
+    height: 3000px; 
+    background: linear-gradient(500deg,#ccc,#333)
+  }
+</style>
+</head>
+
+<body>
+    <div id="root">
+
+
+    </div>
+
+    <script>
+      console.log(window);
+      console.log(document.body.scrollHeight);
+
+      let docTotalHeightValue =document.body.scrollHeight;
+      let currentscrollValue = window.scrollY;
+
+      window.addEventListener('scroll', (event) => {
+      if(currentscrollValue>0){
+        console.log('당신은 방금 스크롤을 내렸습니다.')
+      }
+
+
+      if(window.scrollY >= docTotalHeightValue){
+        console.log('yaho');
+        console.log(window.scrollY);
+        console.log('전체값'+ docTotalHeightValue);
+      }
+      //  console.log(event.offsetY);
+//
+      //  if(event.offsetY>2400){
+      //    alert('스크롤 너무 많이 내렸어');
+      //    confirm('이거 맞음')
+      //  }
+      });
+
+
+    </script>
+</body>
+</html>

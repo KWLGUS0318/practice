@@ -1,0 +1,20 @@
+*{margin: 0px; padding: 0px;}
+@mixin a{
+  background-color: plum;
+
+#root{
+  width: 100vw;
+  height: 100vh;
+ @include a()
+
+
+
+  &>div{
+    width: 100vw;
+    height: 50vh;
+    background-color:#c4c4c4;
+
+
+
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    #class{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+  
+
+    }
+
+    #wrapper{
+      width: 400px;
+      height: 800px;
+    }
+
+.root{
+  width: 428px;;
+  height: 926px;
+  background-color: white;
+
+  border: 1px solid gray;
+
+
+}
+
+.root div{
+  width: 417px;
+  height: 120px;
+  border: 8px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.root div:nth-child(1){
+  width: 353px;
+  height: 50px;
+  border: 40px solid gray;
+}
+
+
+
+.root div:nth-child(7){
+  width: 50vw;
+  height: 100vh;
+  background-color: gray;
+    }
+    
+    .position-absolute{
+      position:absolute;
+    }
+
+    .root div:nth-child(7) p{
+      background-color: gray;
+    }
+
+    nav{
+          width: 25vw;
+          height: 64vh;
+          opacity: 0.5;
+          background-color: pink;
+          z-index:1;}
+
+    main{
+          width: 450px;
+          height: 800px;
+          
+          z-index: 0;}
+
+
+  </style>
+  </head>
+
+<body>
+<div id="class">
+  <div id="wrapper">
+    <nav class="position-absolute"></nav>
+    <main class="position-absolute"></main>
+          <div class="root">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+              <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, unde natus voluptate saepe facilis placeat asperiores laboriosam nobis voluptatum delectus mollitia doloremque vero accusamus atque ad inventore possimus illum. Vero?
+              </p>
+          </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+</body>
+</html>

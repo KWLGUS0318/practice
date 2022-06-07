@@ -1,0 +1,122 @@
+*{margin: 0px; padding:0px;}
+.container{
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 19, 189, 0.678);
+}
+.container :nth-child(1){
+  width: inherit;
+  height: 20vw;
+ 
+}
+.container :nth-child(2){
+  width: inherit;
+  height: 40vw;
+  font-size: 3;
+  display: flex;
+  justify-content: center;
+ 
+}
+.container :nth-child(2) :nth-child(1){
+  width: 60%;
+  height: 30vw;
+  text-align: center;
+  line-height: 15vh;
+  font-size: 15vw;
+  font-weight: 20vw;
+ color: white;
+}
+
+.container :nth-child(3){
+  width: inherit;
+  height: 10vw;
+  font-size: 3px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container :nth-child(4){
+  width: 40%;
+  height: 10vw;
+  font-size: 3vh;
+  display: flex;
+  margin-left: 15vw;
+  color: white;
+
+}
+.container :nth-child(5){
+  width: 65%;
+  height: 10vw;
+  display: flex;
+  margin-left:15vw;
+  color: rgba(0, 19, 189, 0.678);
+background-color: white ;
+}
+.container :nth-child(5) h1{
+  width: 100%;
+  line-height: 5vh;
+  font-size: 3vw;
+  margin-left: 2vw;
+}
+/*세번째 박스*/
+
+.container :nth-child(6){
+  width: 40%;
+  height: 10vw;
+  font-size: 3vh;
+  display: flex;
+  margin-left: 15vw;
+
+
+}
+.container :nth-child(7) {
+  width: inherit;
+  height: 20vw;
+}
+.container :nth-child(7){
+  width: 40%;
+  height: 10vw;
+  font-size: 3vh;
+  display: flex;
+  margin-left: 15vw;
+  color: white;}
+
+
+
+
+.container :nth-child(8){
+  width: 65%;
+  height: 10vw;
+  display: flex;
+  margin-left: 15vw;
+  color: rgba(0, 19, 189, 0.678);
+  background-color: white;
+}
+.container :nth-child(8) h1{
+  width: 100%;
+  line-height: 5vh;
+  /*line hieght를 주었더니 페이지 축소했을 때에는 적용이 되지만 확대했을 때 적용이 안되서 텍스트를 중앙으로 어떻게 배치해야될지 모르겠습니다.*/
+  font-size: 3vw;
+  margin-left: 2vw;
+}
+
+.container :nth-child(9){
+  width: 65%;
+  height: 10vw;
+  display: flex;
+  margin-left: 15vw;
+  color: rgba(0, 19, 189, 0.678);
+
+}
+.container :nth-child(10){
+  width: 40%;
+  height: 8vw;
+  margin-left: 15vw;
+  background-color: rgb(106, 109, 236);
+  margin-left: 40vw;
+  border-radius: 10vw;
+  color: white;
+}
+.container :nth-child(10) h2{
+  margin-left: 10vw;}

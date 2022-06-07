@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById("root");
+    // 변수 root 에서 문서 root 좀 꺼내줘
+    root.style.fontSize = "5rem";
+    // root 폰트 사이즈를 5rem으로 
+
+
+    let isStatus = true;
+    //  변수 isStatus =는 참이야
+    let current = 0;
+    // 변수 current 는 0이야
+    root.textContent = current;
+    // root의 내용은 current야
+
+
+    root.addEventListener('click', function () {
+      // root에 클릭하는 기능을 추가할래
+      if (isStatus === true) {
+        // 만약 isStatus가 사실이랑 같으면 
+        current++;
+        // current는 점점 숫자가 증가해 
+        if (current >= 20) {
+          // 만약 current 20보다 크면 
+          isStatus = false;
+          // isStatus 는 r거짓이야 
+        }
+        // 
+        root.textContent = current;
+        // root의 내용은 current 야 
+      } else {
+        // 그 밖에
+        current--;
+        // current 가 무한대로 작아져 
+        if (current <= 0) {
+          // 만약 current가 0과 같거나 크면
+          isStatus = true;
+          // isStatus는 참이야 
+        }
+        // 
+        root.textContent = current;
+        
+        //root의 내용은 current 야 
+      }
+    })
+  </script>
+
+</body>
+
+</html> 

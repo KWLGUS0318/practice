@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #333;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <h1>111</h1>
+    <h1>222</h1>
+  </div>
+
+  <script>
+    const root = document.getElementById('root')
+
+    console.dir(root)
+
+    let bgColorValue = 120;
+    root.style.backgroundColor = `rgb(${bgColorValue},${bgColorValue},${bgColorValue})`
+
+
+
+    // 전체값에서 퍼센트를 구하는 공식 
+    let setResult = Math.round(255 * 35) / 100;
+    console.log(setResult)
+
+    root.addEventListener('mousemove', (event) => {
+      console.log(event.offsetX)
+      console.log(event.offsetY);
+      root.children[0].textContent = event.offsetX;
+      root.children[1].textContent = event.offsetY;
+    });
+  </script>
+</body>
+
+</html>

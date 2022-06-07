@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+
+        .container{
+            width: 1920px;
+            height: 1080px;
+            background-color: white;
+        }
+        .container div{
+            width: 1920px;
+            border: 2px solid burlywood;
+        }
+        .container div:nth-child(1){
+            height: 300px;
+
+        }
+        .container div:nth-child(2){
+            height: 600px;
+            display: flex;
+        justify-content: center;}
+
+
+
+            .container div:nth-child(2) main{
+            width: 960px;
+            height: 600px;
+            background-color: beige;
+            display: flex;
+        
+        }
+
+
+        .container div:nth-child(2) main div{
+            width: 150px;
+            height: 300px;
+            margin:20px;
+            background-color: plum;
+        }
+
+
+
+        body{
+            display: block;
+            margin: 60px;
+        }
+        ul{
+            list-style-type : none;
+            *background-color: burlywood;
+
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            
+
+
+        }
+
+        ul li{
+            margin: 40px;
+            transition:1s;
+            cursor:pointer;
+            background-color: beige;
+            color: brown;
+
+        }
+
+        ul li:hover{
+            margin:40px;
+            color: burlywood;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul> 
+        <li>로그인</li>
+        <li>회원가입</li>
+        <li>스토어</li>
+        <li>이벤트</li>
+        <li>Q&A</li>
+
+
+    </ul>
+    <div class="container">
+        <div></div>
+        <div>
+            <main>
+                <div></div>
+                <div></div> 
+                <div></div>
+                <div></div>
+            </main>
+        </div>
+
+    </div>
+</body>
+</html>
