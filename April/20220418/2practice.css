@@ -8,19 +8,15 @@
   height: 400vh;
   background-color: #c4c4c4;
 }
-
 #root > div {
   width: 100vw;
   height: 3vh filter blur(4px);
 }
-
 #root > div img {
   width: 100vw;
 }
-
 #root .container {
   width: inherit;
   height: 20vh;
   background-color: gray;
-}
-/*# sourceMappingURL=2practice.css.map */
+}/*# sourceMappingURL=2practice.css.map */

@@ -20,7 +20,6 @@
     left: 30vw;
   }
 }
-
 @-webkit-keyframes right {
   from {
     right: 10vw;
@@ -29,7 +28,6 @@
     right: 30vw;
   }
 }
-
 @keyframes right {
   from {
     right: 10vw;
@@ -38,26 +36,15 @@
     right: 30vw;
   }
 }
-
 .root {
   width: 100vw;
   height: 40vh;
   background-color: black;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
-
 .root > span {
   width: 5vw;
   height: 5vw;
@@ -70,21 +57,14 @@
   width: 100vw;
   height: 40vh;
   background-color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
-
 .main :first-child {
   width: 15vw;
   height: 15vh;
-  background-color: #df4e4e;
+  background-color: rgb(223, 78, 78);
   border-radius: 50px;
   z-index: 1;
   position: absolute;
@@ -93,7 +73,6 @@
   -webkit-animation: 1s left infinite;
           animation: 1s left infinite;
 }
-
 .main :nth-child(2) {
   width: 15vw;
   height: 15vh;
@@ -127,40 +106,25 @@
   width: 100vw;
   height: 5vh;
   background-color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
   border: 1px solid red;
 }
-
 .container :first-child {
   width: inherit;
   height: 5vh;
   background-color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
-
 .container > aside p {
   width: 10vw;
   height: 3vh;
   background-color: #3a3434;
   border-radius: 30vw;
 }
-
 .container > aside :first-child {
   width: 40vw;
   height: 3vh;
@@ -173,17 +137,10 @@
   height: 30vh;
   border: 1px solid blue;
   background-color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
-
 .last :first-child {
   width: 50vw;
   height: 25vh;
@@ -192,7 +149,6 @@
   border-radius: 30px;
   background-color: #ccc;
 }
-
 .last :nth-child(2) {
   width: 40vw;
   height: 25vh;
@@ -200,5 +156,4 @@
   margin: 2rem;
   border-radius: 30px;
   background-color: #ccc;
-}
-/*# sourceMappingURL=practice.css.map */
+}/*# sourceMappingURL=practice.css.map */

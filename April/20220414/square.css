@@ -42,22 +42,17 @@
     height: 100vh;
   }
 }
-
 .root {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 10vw;
 }
-
 .root > :nth-child(1) {
   width: inherit;
   height: inherit;
   mix-blend-mode: multiply;
 }
-
 .root > :nth-child(1) :nth-child(1) {
   width: 40vw;
   height: 40vw;
@@ -69,7 +64,6 @@
   -webkit-animation: 10s animation infinite;
           animation: 10s animation infinite;
 }
-
 .root > :nth-child(1) :nth-child(2) {
   width: 40vw;
   height: 40vw;
@@ -80,7 +74,6 @@
   top: 60vw;
   right: 20vw;
 }
-
 .root > :nth-child(1) :nth-child(3) {
   width: 40vw;
   height: 40vw;
@@ -90,7 +83,6 @@
   position: absolute;
   top: 45vh;
 }
-
 .root > :nth-child(1) :nth-child(4) {
   width: 40vw;
   height: 40vw;
@@ -99,5 +91,4 @@
   position: absolute;
   top: 50vh;
   right: 20vw;
-}
-/*# sourceMappingURL=square.css.map */
+}/*# sourceMappingURL=square.css.map */

@@ -1,22 +1,16 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .root {
   width: 100vw;
   height: 20vh;
   background-color: #c4c4c4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .root > nav {
   width: 40vw;
   height: 30vh;
@@ -25,18 +19,14 @@
   text-align: center;
   line-height: 3rem;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .root > nav p {
   width: 25%;
   height: 30vh;
   background-color: #c4c4c4;
   border: 1rem solid gray;
 }
-
 .root > menu {
   width: 10vw;
   height: 10vh;
@@ -48,11 +38,8 @@
   width: 100vw;
   height: 30vh;
   background-color: green;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
-
 .container-1 :nth-child(1) {
   width: 20vw;
   height: 20vh;
@@ -62,7 +49,6 @@
   top: 15vh;
   right: 35vw;
 }
-
 .container-1 :nth-child(2) {
   width: 20vw;
   height: 20vh;
@@ -72,7 +58,6 @@
   top: 18vh;
   right: 30vw;
 }
-
 .container-1 :nth-child(3) {
   width: 20vw;
   height: 20vh;
@@ -86,22 +71,16 @@
 .container-2 {
   width: 100vw;
   height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .container-2 > main {
   width: 33.3%;
   height: 30vh;
   border: 1rem solid gray;
   background-color: #c4c4c4;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .container-2 > main div {
   margin: 2px;
   width: 15vw;
@@ -110,7 +89,6 @@
   background-color: green;
   z-index: 1;
 }
-
 .container-2 > main div p {
   width: 15vw;
   height: 3vw;
@@ -123,15 +101,11 @@
   width: 100vw;
   height: 20vh;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .cotainer-3 > footer {
   width: 33.3%;
   height: inherit;
   border: 1rem solid blue;
   background-color: #c4c4c4;
-}
-/*# sourceMappingURL=practice.css.map */
+}/*# sourceMappingURL=practice.css.map */
