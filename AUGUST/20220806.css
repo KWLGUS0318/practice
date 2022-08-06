@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul > li:nth-child(1) {
+  background-color: #111;
+}
+ul > li:nth-child(3) {
+  background-color: rgb(166, 70, 70);
+}
+ul > li:nth-child(5) {
+  background-color: rgb(153, 23, 196);
+}
+ul > li:nth-child(7) {
+  background-color: rgb(12, 69, 144);
+}
+ul > li:nth-child(9) {
+  background-color: rgb(81, 186, 42);
+}/*# sourceMappingURL=20220806.css.map */
